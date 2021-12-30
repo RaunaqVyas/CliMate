@@ -14,6 +14,9 @@
 		20138FD3277AC4BE00932D03 /* CliMate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20138FD1277AC4BE00932D03 /* CliMate.xcdatamodeld */; };
 		20138FD5277AC4C300932D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20138FD4277AC4C300932D03 /* Assets.xcassets */; };
 		20138FD8277AC4C300932D03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20138FD6277AC4C300932D03 /* LaunchScreen.storyboard */; };
+		20138FE0277AC6FB00932D03 /* WeatherManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138FDF277AC6FB00932D03 /* WeatherManger.swift */; };
+		20138FE5277AC7DC00932D03 /* weatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138FE4277AC7DC00932D03 /* weatherData.swift */; };
+		20138FE7277AC80B00932D03 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138FE6277AC80B00932D03 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		20138FD4277AC4C300932D03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20138FD7277AC4C300932D03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20138FD9277AC4C300932D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20138FDF277AC6FB00932D03 /* WeatherManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManger.swift; sourceTree = "<group>"; };
+		20138FE4277AC7DC00932D03 /* weatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherData.swift; sourceTree = "<group>"; };
+		20138FE6277AC80B00932D03 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +66,41 @@
 			children = (
 				20138FC8277AC4BE00932D03 /* AppDelegate.swift */,
 				20138FCA277AC4BE00932D03 /* SceneDelegate.swift */,
-				20138FCC277AC4BE00932D03 /* ViewController.swift */,
-				20138FCE277AC4BE00932D03 /* Main.storyboard */,
+				20138FE1277AC71200932D03 /* Model */,
+				20138FE3277AC73C00932D03 /* View */,
+				20138FE2277AC72C00932D03 /* Controller */,
 				20138FD4277AC4C300932D03 /* Assets.xcassets */,
 				20138FD6277AC4C300932D03 /* LaunchScreen.storyboard */,
 				20138FD9277AC4C300932D03 /* Info.plist */,
 				20138FD1277AC4BE00932D03 /* CliMate.xcdatamodeld */,
 			);
 			path = CliMate;
+			sourceTree = "<group>";
+		};
+		20138FE1277AC71200932D03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20138FDF277AC6FB00932D03 /* WeatherManger.swift */,
+				20138FE4277AC7DC00932D03 /* weatherData.swift */,
+				20138FE6277AC80B00932D03 /* WeatherModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		20138FE2277AC72C00932D03 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20138FCC277AC4BE00932D03 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		20138FE3277AC73C00932D03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20138FCE277AC4BE00932D03 /* Main.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +176,11 @@
 			files = (
 				20138FCD277AC4BE00932D03 /* ViewController.swift in Sources */,
 				20138FC9277AC4BE00932D03 /* AppDelegate.swift in Sources */,
+				20138FE5277AC7DC00932D03 /* weatherData.swift in Sources */,
+				20138FE7277AC80B00932D03 /* WeatherModel.swift in Sources */,
 				20138FCB277AC4BE00932D03 /* SceneDelegate.swift in Sources */,
 				20138FD3277AC4BE00932D03 /* CliMate.xcdatamodeld in Sources */,
+				20138FE0277AC6FB00932D03 /* WeatherManger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
